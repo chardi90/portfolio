@@ -48,6 +48,28 @@ a {
 }
 
 a:hover {
+  background: var(--my-accent-colour);
   color: var(--my-greyed-out-colour);
   text-decoration: underline;
+}
+
+.hero {
+  background: var(--my-muted-colour);
+  text-align: center;
+  padding: 160px 20px;
+}
+
+.primary-button {
+  background: var(--my-primary-colour);
+  border-radius: 4px;
+  color: var(--my-accent-colour);
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 27px;
+  padding: 12px 20px;
+}
+
+.primary-button:hover {
+  background: var(--my-accent-colour);
+  color: var(--my-primary-colour);
 }
