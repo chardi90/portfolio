@@ -48,14 +48,6 @@ h4 {
   font-size: 22px;
 }
 
-.card-title h4 {
-  color: var(--my-primary-colour) !important;
-  font-family: var(--font-option-2) !important;
-  font-size: 22px;
-  font-weight: 500;
-  line-height: 1;
-}
-
 p {
   color: var(--my-dark-colour);
   font-family: var(--font-option-2);
@@ -126,4 +118,84 @@ a {
 
 .special-background {
   background: var(--my-greyed-out-colour);
+}
+
+.special-subheading {
+  margin: 0 20px;
+}
+
+.feature .card {
+  position: relative;
+  bottom: 10%;
+}
+
+.featured-btn {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.accordion-item {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 54px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h2,
+  h3,
+  h4,
+  p {
+    text-align: center;
+  }
+
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .skills .col-md-4 {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .card-img,
+  .card-img-top {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .special-subheading {
+    text-align: center;
+    margin: 10px 0 20px;
+  }
+
+  .feature .card {
+    position: static;
+  }
+
+  .outline-button {
+    display: block;
+    justify-content: center;
+    margin: 0 100px;
+    padding: 10px 5px;
+  }
+
+  .accordion-item p {
+    font-size: 10px;
+  }
 }
