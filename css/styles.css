@@ -5,6 +5,7 @@
   --my-background-colour: #fdfff2;
   --my-muted-colour: #e0d6ce;
   --my-greyed-out-colour: #b6a99f;
+  --headings-font: "Cormorant SC", serif;
   --font-option-1: "Lora", serif;
   --font-option-2: "Source Code Pro", monospace;
 }
@@ -15,7 +16,7 @@ body {
 
 h1 {
   color: var(--my-primary-colour);
-  font-family: "Cormorant SC", serif;
+  font-family: var(--headings-font);
   font-size: 125px;
   font-weight: 600;
   line-height: 1;
@@ -23,7 +24,7 @@ h1 {
 
 h2 {
   color: var(--my-accent-colour);
-  font-family: "Cormorant SC", serif;
+  font-family: var(--headings-font);
   font-size: 60px;
   font-weight: 600;
   line-height: 1;
@@ -40,16 +41,19 @@ h3 {
 p {
   color: var(--my-dark-colour);
   font-family: var(--font-option-2);
+  line-height: 1.5;
+}
+
+section {
+  margin: 40px auto;
+  max-width: 1250px;
 }
 
 a {
-  color: var(--my-accent-colour);
   text-decoration: none;
 }
 
 a:hover {
-  background: var(--my-accent-colour);
-  color: var(--my-greyed-out-colour);
   text-decoration: underline;
 }
 
@@ -72,4 +76,23 @@ a:hover {
 .primary-button:hover {
   background: var(--my-accent-colour);
   color: var(--my-primary-colour);
+}
+
+.outline-button {
+  border: 1px solid var(--my-primary-colour);
+  border-radius: 4px;
+  color: var(--my-primary-colour);
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 27px;
+  padding: 12px 20px;
+}
+
+.outline-button:hover {
+  border: 1px solid var(--my-accent-colour);
+  color: var(--my-accent-colour);
+}
+
+.special-background {
+  background: var(--my-greyed-out-colour);
 }
