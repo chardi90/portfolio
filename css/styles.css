@@ -12,6 +12,8 @@
 
 body {
   background: var(--my-background-colour);
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -30,12 +32,21 @@ h2 {
   line-height: 1;
 }
 
-h3 {
+h3,
+h4 {
   color: var(--my-primary-colour);
   font-family: var(--font-option-2);
-  font-size: 22px;
+
   font-weight: 500;
   line-height: 1;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 22px;
 }
 
 p {
@@ -44,23 +55,36 @@ p {
   line-height: 1.5;
 }
 
-section {
-  margin: 40px auto;
-  max-width: 1250px;
-}
-
 a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 .hero {
-  background: var(--my-muted-colour);
+  position: relative;
+  background-color: var(--my-muted-colour);
   text-align: center;
   padding: 160px 20px;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/images/background-code-three-code-only.jpg") center/cover
+    no-repeat;
+  opacity: 0.1;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.divider {
+  margin: 50px 0;
 }
 
 .primary-button {

@@ -32,10 +32,10 @@
     ></script>
   </head>
   <body>
+    <div class="nav">
+      <div class="container"></div>
+    </div>
     <div class="hero">
-      <div class="nav">
-        <div class="container"></div>
-      </div>
       <h3 class="text-center">Greetings from Manchester!</h3>
       <h1 class="text-center">CLARE HARDING</h1>
       <h3 class="text-center">Front-end & App Developer</h3>
@@ -47,114 +47,219 @@
     </div>
     <section>
       <h2 class="text-center m-5">MY SKILLS</h2>
-      <div class="skills" id="skills">
-        <div class="row m-5">
-          <div class="col-sm-4 border special-background">
-            <h3 class="text-center p-3">Software Development</h3>
-            <p class="p-3">
-              Good grasp of Python, JavaScript, and Object Oriented Programming
-            </p>
+      <div class="container skills" id="skills">
+        <div class="row gx-3">
+          <div class="col-md-4 mb-3">
+            <div class="special-background border rounded-1 p-3 h-100">
+              <h4 class="text-center p-3">Software Development</h4>
+              <p class="p-3">
+                Good grasp of Python, JavaScript, and Object Oriented
+                Programming
+              </p>
+            </div>
           </div>
-          <div class="col-sm-4 border special-background">
-            <h3 class="text-center p-3">Front-end Development</h3>
-            <p class="p-3">
-              Passionate about UX/UI, HTML, Css, JavaS cript and React
-            </p>
+          <div class="col-md-4 mb-3">
+            <div class="special-background border rounded-1 p-3 h-100">
+              <h4 class="text-center p-3">Front-end Development</h4>
+              <p class="p-3">
+                Passionate about UX/UI, HTML, CSS, JavaScript and React
+              </p>
+            </div>
           </div>
-          <div class="col-sm-4 border special-background">
-            <h3 class="text-center p-3">Project Management</h3>
-            <p class="p-3">
-              10 year of experience in operations and project management in the
-              higher education sector.
-            </p>
+          <div class="col-md-4 mb-3">
+            <div class="special-background border rounded-1 p-3 h-100">
+              <h4 class="text-center p-3">Project Management</h4>
+              <p class="p-3">
+                10 years of experience in operations and project management in
+                the higher education sector.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <div class="divider"></div>
     <section>
       <div class="container" id="work">
         <div class="row feature">
           <div class="col-sm-6">
             <h2 class="m-5">MY WORK</h2>
-            <h3 class="ms-5">Featured Project</h3>
+            <h4 class="ms-5">Featured Project</h4>
             <p class="m-5">
-              Enter keywords and let our AI create a fun, clever limerick in the
-              spirit of Edward Lear. Perfect for poetry lovers and playful minds
-              alike!
+              Enter keywords and let SheCodes AI create you a fun, clever
+              limerick in the spirit of Edward Lear. Perfect for poetry lovers
+              and playful minds alike!
             </p>
-            <div>
+            <div class="d-grid d-md-flex justify-content-md-end">
               <a
                 href="https://limerick-generator.netlify.app/"
                 target="_blank"
                 title="AI Limerick Generator"
-                class="btn outline-button ms-5 mt-2"
+                class="btn outline-button me-5 mb-5"
                 >View Project</a
               >
             </div>
           </div>
           <div class="col-sm-6 mt-5">
-            <img
-              src="/images/Chardi Logo.svg"
-              alt="AI Limerick Generator Preview"
-              class="shadow"
-            />
+            <div class="card shadow">
+              <img
+                src="/images/ai-limerick-generator.png"
+                alt="AI Limerick Generator Preview"
+                class="card-img"
+              />
+            </div>
           </div>
         </div>
+        <div class="divider"></div>
         <div class="row projects" id="projects">
-          <div class="col-sm-2 m-5">
-            <img
-              src="/images/Chardi Logo.svg"
-              alt="AI Limerick Generator Preview"
-              class="rounded-circle shadow"
-            />
+          <div class="col-sm-4 mb-3 mb-sm-0">
+            <div class="card shadow">
+              <img
+                src="/images/weather-forecast-app.png"
+                alt="Weather Forecast App"
+                class="card-img-top img-fluid"
+                style="height: 200px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Weather App</h4>
+                <p class="card-text">A weather forecast API.</p>
+                <a
+                  href="the-weather-in.netlify.app/"
+                  target="_blank"
+                  class="btn outline-button shadow"
+                  >View Project</a
+                >
+              </div>
+            </div>
           </div>
-          <div class="col-sm-2 m-5">
-            <img
-              src="/images/Chardi Logo.svg"
-              alt="AI Limerick Generator Preview"
-              class="rounded-circle shadow"
-            />
+          <div class="col-sm-4 mb-3 mb-sm-0">
+            <div class="card shadow">
+              <img
+                src="/images/le-croissant-website.png"
+                alt="Croissant Website"
+                class="card-img-top img-fluid"
+                style="height: 200px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Bakery App</h4>
+                <p class="card-text">Products at their best.</p>
+                <a
+                  href="https://le-croissant.netlify.app/"
+                  target="_blank"
+                  class="btn outline-button shadow"
+                  >View Project</a
+                >
+              </div>
+            </div>
           </div>
-          <div class="col-sm-2 m-5">
-            <img
-              src="/images/Chardi Logo.svg"
-              alt="AI Limerick Generator Preview"
-              class="rounded-circle shadow"
-            />
+          <div class="col-sm-4 mb-3 mb-sm-0">
+            <div class="card shadow">
+              <img
+                src="/images/world-clock-time-zone-converter.png"
+                alt="World Clock - Time Zone App"
+                class="card-img-top img-fluid"
+                style="height: 200px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h4 class="card-title">World Clock</h4>
+                <p class="card-text">A time zone comparison API.</p>
+                <a
+                  href="time-zones-clock.netlify.app/"
+                  target="_blank"
+                  class="btn outline-button shadow"
+                  >View Project</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <div class="divider"></div>
     <section>
-      <h2 class="text-center m-5">PROFESSIONAL EXPERIENCE</h2>
+      <h2 class="text-center m-5">MY EXPERIENCE</h2>
       <div class="experience m-5" id="experience">
-        <div class="m-3">
-          <p
-            class="border rounded-1 special-background shadow p-3 d-flex justify-content-between"
-          >
-            Freelance Consultant <span class="date">2025</span>
-            <span class="text-end">+</span>
-          </p>
-        </div>
-        <div class="m-3">
-          <p
-            class="border rounded-1 special-background shadow p-3 d-flex justify-content-between"
-          >
-            Head of Operations <span class="date">2022 - 2025</span>
-            <span class="text-end">+</span>
-          </p>
-        </div>
-        <div class="m-3">
-          <p
-            class="border rounded-1 special-background shadow p-3 d-flex justify-content-between"
-          >
-            Partnerships & General Manager
-            <span class="date">2019 - 2022</span>
-            <span class="text-end">+</span>
-          </p>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed special-background border rounded-1"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                <p class="row d-flex justify-content-between">
+                  <div class="col ms-5">Freelance Consultant</div> <div class="col">@ Gradcore Ltd</div> <div class="col">2025</div> 
+                </p>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <p>This is the first item’s accordion body.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed special-background border rounded-1"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+              <p class="row d-flex justify-content-between">
+                <div class="col ms-5">Head of Operations</div> <div class="col">@ Pagoda Projects Ltd</div> <div class="col">2022 - 2025</div> 
+              </p>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <p>Let’s imagine this being filled with some actual stuff.</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed special-background border rounded-1"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+              <p class="row d-flex justify-content-between">
+                <div class="col ms-5">Partnerships & General Manager</div> <div class="col">@ Pagoda Projects Ltd</div> <div class="col">2019 - 2022</div> 
+              </p>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <p>just filling up the space to make it look good.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <div class="divider"></div>
     <section>
       <h2 class="text-center m-5">CONTACT ME</h2>
       <div class="contact" id="contact">
@@ -169,6 +274,7 @@
         </div>
       </div>
     </section>
+    <div class="divider"></div>
     <footer>
       <div class="container">
         <div class="row m-5 text-center">
