@@ -118,6 +118,25 @@ textarea {
   resize: vertical;
 }
 
+footer {
+  padding: 10px 0;
+}
+
+footer .social-links a {
+  background-color: var(--my-accent-colour);
+  border-radius: 50%;
+  color: var(--my-primary-colour);
+  font-size: 18px;
+  margin: 0 20px;
+  padding: 10px 14px;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  background: var(--my-primary-colour);
+  color: var(--my-accent-colour);
+}
+
 .hero {
   position: relative;
   background-color: var(--my-muted-colour);
@@ -143,11 +162,8 @@ textarea {
 }
 
 .logo {
-  max-height: 40px;
-}
-
-.divider {
-  margin: 50px 0;
+  max-height: 50px;
+  padding-left: 40px;
 }
 
 .primary-button {
@@ -165,6 +181,14 @@ textarea {
   color: var(--my-primary-colour);
 }
 
+.divider {
+  margin: 50px 0;
+}
+
+.muted-background {
+  background: var(--my-muted-colour);
+}
+
 .outline-button {
   border: 1px solid var(--my-primary-colour);
   border-radius: 4px;
@@ -180,11 +204,7 @@ textarea {
   color: var(--my-accent-colour);
 }
 
-.special-background {
-  background: var(--my-greyed-out-colour);
-}
-
-.special-subheading {
+.feature-subheading {
   margin: 0 20px;
 }
 
@@ -193,18 +213,20 @@ textarea {
   bottom: 10%;
 }
 
-.featured-btn {
+.feature-btn {
   margin-top: 20px;
   margin-left: 20px;
 }
 
-.accordion-item {
-  max-width: 600px;
-  margin: 0 auto;
+.contact-box {
+  background: var(--my-muted-colour);
+  border-radius: 10px;
+  margin: 30px;
+  padding: 30px 100px;
 }
 
 .content-container {
-  padding: 160px 20px;
+  padding: 50px 20px;
 }
 
 .content h1 {
@@ -222,6 +244,11 @@ textarea {
 
 .content {
   margin: 30px;
+}
+
+.accordion-item {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .contact-form {
@@ -273,6 +300,7 @@ textarea {
   }
 
   .logo {
+    padding: 0;
     position: relative;
     top: 5px;
     max-height: 30px;
@@ -316,5 +344,29 @@ textarea {
   .content {
     text-align: center;
     padding: 30px 20px;
+  }
+
+  .contact-box {
+    padding: 10px 5px;
+  }
+
+  .contact-box p,
+  .contact-box h4 {
+    padding: 10px 0 0 15px;
+    font-size: 12px;
+    text-align: left;
+  }
+
+  .contact-box h4 {
+    font-size: 14px;
+  }
+
+  .contact-box p {
+    font-size: 12px;
+  }
+
+  .contact-box a {
+    font-size: 14px;
+    margin: 5px 5px 0 0;
   }
 }
