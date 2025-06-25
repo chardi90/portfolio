@@ -139,6 +139,22 @@ a {
   margin: 0 auto;
 }
 
+.about-section {
+  padding: 160px 20px;
+}
+
+.about-section h1 {
+  font-size: 46px;
+}
+
+.about-section h3 {
+  font-size: 22px;
+}
+
+.about-section-content {
+  margin: 30px;
+}
+
 @media (max-width: 576px) {
   h1 {
     font-size: 54px;
@@ -197,5 +213,10 @@ a {
 
   .accordion-item p {
     font-size: 10px;
+  }
+
+  .about-section {
+    text-align: center;
+    padding: 30px 20px;
   }
 }
