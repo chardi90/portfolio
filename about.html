@@ -32,6 +32,36 @@
     ></script>
   </head>
   <body>
+    <header>
+      <div class="container">
+        <nav class="d-flex justify-content-between">
+          <a href="/index.html" alt="Homepage"
+            ><img
+              src="/images/chardi-logo.png"
+              alt="Chardi Logo"
+              class="logo d-none d-md-block"
+          /></a>
+          <a href="/index.html" alt="Homepage"
+            ><img
+              src="/images/thumbnail-logo.png"
+              alt="Chardi Logo"
+              class="logo d-block d-md-none"
+          /></a>
+          <ul>
+            <li>
+              <a href="/index.html">Home</a><span class="slashes">//</span>
+            </li>
+            <li class="active">
+              <a href="/about.html">About</a><span class="slashes">//</span>
+            </li>
+            <li>
+              <a href="/work.html">Work</a><span class="slashes">//</span>
+            </li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <div class="content-container container">
       <div class="row">
         <div class="col-lg-6">
@@ -51,13 +81,115 @@
         <div class="col-lg-6">
           <div class="content">
             <img
-              src="/images/Clare Photo.png"
+              src="/images/clare-photo.png"
               alt="Photo of Clare Harding"
               class="img-fluid rounded-1 shadow"
             />
           </div>
         </div>
       </div>
+      <div class="divider"></div>
+      <section>
+        <h2 class="text-center m-5">MY EXPERIENCE</h2>
+        <div class="experience m-5" id="experience">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <p class="accordion-header">
+                <button
+                  class="accordion-button collapsed special-background border rounded-1"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100 px-3"
+                  >
+                    <span class="text-start"
+                      >Freelance Consultant @ Gradcore Ltd</span
+                    >
+                    <span class="text-end">2025</span>
+                  </div>
+                </button>
+              </p>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <p class="ms-4">This is the first item’s accordion body.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <p class="accordion-header">
+                <button
+                  class="accordion-button collapsed special-background border rounded-1"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100 px-3"
+                  >
+                    <span class="text-start"
+                      >Head of Operations @ Pagoda Projects Ltd</span
+                    >
+                    <span class="text-end">2022 - 2025</span>
+                  </div>
+                </button>
+              </p>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <p class="ms-4">
+                    Let’s imagine this being filled with some actual stuff.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <p class="accordion-header">
+                <button
+                  class="accordion-button collapsed special-background border rounded-1"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100 px-3"
+                  >
+                    <span class="text-start"
+                      >Partnerships Manager @ Pagoda Projects Ltd</span
+                    >
+                    <span class="text-end">2019 - 2022</span>
+                  </div>
+                </button>
+              </p>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <p class="ms-4">
+                    Just filling up the space to make it look good.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
 </html>
