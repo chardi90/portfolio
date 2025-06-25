@@ -161,6 +161,38 @@ a {
   margin: 30px;
 }
 
+.contact-form {
+  background: var(--my-muted-colour);
+  padding: 30px;
+  max-width: 500px;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: var(--my-primary-colour);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  color: var(--my-dark-colour);
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+}
+
 @media (max-width: 576px) {
   h1 {
     font-size: 54px;
