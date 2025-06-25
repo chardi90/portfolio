@@ -221,7 +221,7 @@ footer .social-links a:hover {
 .contact-box {
   background: var(--my-muted-colour);
   border-radius: 10px;
-  margin: 30px;
+  margin-bottom: 30px;
   padding: 30px 100px;
 }
 
