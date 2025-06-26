@@ -200,6 +200,18 @@ footer .social-links a:hover {
   background: var(--my-muted-colour);
 }
 
+.skills,
+.work,
+.featured {
+  align-items: center;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
 .outline-button {
   border: 1px solid var(--my-primary-colour);
   border-radius: 4px;
