@@ -215,6 +215,11 @@ footer .social-links a:hover {
   color: var(--my-accent-colour);
 }
 
+.symbols {
+  color: black;
+  font-size: 22px;
+}
+
 .feature-subheading {
   margin: 0 20px;
 }
