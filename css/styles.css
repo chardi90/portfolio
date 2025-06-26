@@ -16,8 +16,8 @@ body {
   padding: 0;
 }
 
-header,
-footer {
+footer,
+.subpages {
   background: var(--my-muted-colour);
 }
 
@@ -140,9 +140,20 @@ footer .social-links a:hover {
 .hero {
   position: relative;
   background-color: var(--my-muted-colour);
-  text-align: center;
-  padding: 160px 20px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.hero-content {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
 }
 
 .hero::before {
@@ -307,7 +318,7 @@ footer .social-links a:hover {
   }
 
   .hero {
-    padding: 80px 20px;
+    padding: 10px 10px;
   }
 
   .skills .col-md-4 {
