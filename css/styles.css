@@ -2,9 +2,8 @@
   --my-primary-colour: #6a189a;
   --my-accent-colour: #ff6f00;
   --my-dark-colour: #333333;
-  --my-background-colour: #fdfff2;
-  --my-muted-colour: #e0d6ce;
-  --my-greyed-out-colour: #b6a99f;
+  --my-background-colour: #fdfdfd;
+  --my-muted-colour: #f0f4f8;
   --headings-font: "Cormorant SC", serif;
   --font-option-1: "Lora", serif;
   --font-option-2: "Source Code Pro", monospace;
@@ -307,9 +306,7 @@ footer .social-links a:hover {
   }
 
   h2,
-  h3,
-  h4,
-  p {
+  h3 {
     text-align: center;
   }
 
@@ -338,9 +335,13 @@ footer .social-links a:hover {
     padding: 10px 10px;
   }
 
-  .skills .col-md-4 {
+  .skills div {
     max-width: 100%;
     height: auto;
+  }
+
+  .text-deco {
+    font-size: 9px;
   }
 
   .card-img,
