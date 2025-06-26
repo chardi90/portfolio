@@ -280,12 +280,12 @@ footer .social-links a:hover {
 }
 
 .contact-form {
+  border-radius: 12px;
   background: var(--my-muted-colour);
   padding: 30px;
-  max-width: 500px;
+  max-width: 900px;
   margin: auto;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
 }
 
 @media (max-width: 576px) {
