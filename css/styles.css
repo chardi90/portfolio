@@ -2,6 +2,7 @@
   --my-primary-colour: #6a189a;
   --my-accent-colour: #ff6f00;
   --my-dark-colour: #333333;
+  --my-greyed-out-colour: #b6a99f;
   --my-background-colour: #fdfdfd;
   --my-muted-colour: #f0f4f8;
   --headings-font: "Cormorant SC", serif;
@@ -227,12 +228,9 @@ footer .social-links a:hover {
 }
 
 .symbols {
-  color: black;
+  color: var(--my-accent-colour);
   font-size: 22px;
-}
-
-.feature-subheading {
-  margin: 0 20px;
+  text-align: center;
 }
 
 .feature .card {
@@ -240,9 +238,15 @@ footer .social-links a:hover {
   bottom: 10%;
 }
 
-.feature-btn {
-  margin-top: 20px;
-  margin-left: 20px;
+@media (min-width: 768px) {
+  .feature-btn {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .feature-subheading {
+    margin: 0 20px;
+  }
 }
 
 .contact-box {
@@ -271,6 +275,28 @@ footer .social-links a:hover {
 
 .content {
   margin: 30px;
+}
+
+.html-text {
+  text-align: center;
+  color: var(--my-greyed-out-colour);
+}
+
+.project-title a {
+  color: var(--my-primary-colour);
+  transition: all 100ms ease-in-out;
+}
+
+.project-title a:hover {
+  color: var(--my-accent-colour);
+}
+
+.project-title a img {
+  transition: filter 200ms ease-in-out;
+}
+
+.project-title a:hover img {
+  filter: brightness(85%) grayscale(30%);
 }
 
 .accordion-item {
@@ -324,6 +350,10 @@ footer .social-links a:hover {
     padding-left: 5px;
   }
 
+  footer {
+    font-size: 12px;
+  }
+
   .logo {
     padding: 0;
     position: relative;
@@ -340,8 +370,8 @@ footer .social-links a:hover {
     height: auto;
   }
 
-  .text-deco {
-    font-size: 9px;
+  .html-text {
+    font-size: 12px;
   }
 
   .card-img,
@@ -359,11 +389,16 @@ footer .social-links a:hover {
     position: static;
   }
 
+  .feature-subheading {
+    text-align: center;
+  }
+
   .outline-button {
     display: block;
+    font-size: smaller;
     justify-content: center;
-    margin: 0 100px;
-    padding: 10px 5px;
+    margin: 0px auto;
+    padding: 10px 10px;
   }
 
   .accordion-item p {
@@ -372,7 +407,8 @@ footer .social-links a:hover {
 
   .content {
     text-align: center;
-    padding: 30px 20px;
+    margin: 10px auto;
+    padding: 30px 5px;
   }
 
   .contact-box {
@@ -397,5 +433,10 @@ footer .social-links a:hover {
   .contact-box a {
     font-size: 14px;
     margin: 5px 5px 0 0;
+  }
+
+  .contact-form {
+    margin: 0 auto;
+    padding: 15px;
   }
 }
