@@ -10,18 +10,6 @@
   --font-option-2: "Source Code Pro", monospace;
 }
 
-body.dark-theme {
-  --my-primary-colour: #ff79c6;
-  --my-accent-colour: #50fa7b;
-  --my-dark-colour: #f1fa8c;
-  --my-greyed-out-colour: #44475a;
-  --my-background-colour: #282a36;
-  --my-muted-colour: #f0f4f8;
-  --headings-font: "Cormorant SC", serif;
-  --font-option-1: "Lora", serif;
-  --font-option-2: "Source Code Pro", monospace;
-}
-
 body {
   background: var(--my-background-colour);
   margin: 0;
@@ -70,7 +58,8 @@ h4 {
   font-size: 22px;
 }
 
-p {
+p,
+ul {
   color: var(--my-dark-colour);
   font-family: var(--font-option-2);
   line-height: 1.5;
@@ -269,6 +258,14 @@ footer .social-links a:hover {
   padding: 2rem;
 }
 
+.feature img {
+  max-width: 400px;
+}
+
+.featured {
+  padding-top: 50px;
+}
+
 .outline-button {
   border: 1px solid var(--my-primary-colour);
   border-radius: 4px;
@@ -288,22 +285,6 @@ footer .social-links a:hover {
   color: var(--my-accent-colour);
   font-size: 22px;
   text-align: center;
-}
-
-.feature .card {
-  position: relative;
-  bottom: 10%;
-}
-
-@media (min-width: 768px) {
-  .feature-btn {
-    margin-top: 20px;
-    margin-left: 20px;
-  }
-
-  .feature-subheading {
-    margin: 0 20px;
-  }
 }
 
 .contact-box {
@@ -439,6 +420,17 @@ footer .social-links a:hover {
   width: 90%;
 }
 
+@media (min-width: 768px) {
+  .feature-btn {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .feature-subheading {
+    margin: 0 20px;
+  }
+}
+
 @media (max-width: 900px) {
   h1 {
     font-size: 54px;
@@ -496,23 +488,29 @@ footer .social-links a:hover {
     height: auto;
   }
 
-  .card-img,
-  .card-img-top {
-    max-width: 100%;
-    height: auto;
-  }
-
   .special-subheading {
     text-align: center;
     margin: 10px 0 20px;
   }
 
-  .feature .card {
-    position: static;
-  }
-
   .feature-subheading {
     text-align: center;
+  }
+
+  .feature-subheading ul.list-inline {
+    padding-left: 0;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .feature-subheading ul.list-inline li {
+    display: inline-block;
+    margin: 4px 8px;
+    font-size: 14px;
+  }
+
+  .feature img {
+    max-width: 100%;
   }
 
   .outline-button {
