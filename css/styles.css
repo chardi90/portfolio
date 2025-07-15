@@ -10,10 +10,26 @@
   --font-option-2: "Source Code Pro", monospace;
 }
 
+body.dark-theme {
+  --my-primary-colour: #ff79c6;
+  --my-accent-colour: #50fa7b;
+  --my-dark-colour: #f1fa8c;
+  --my-greyed-out-colour: #44475a;
+  --my-background-colour: #282a36;
+  --my-muted-colour: #f0f4f8;
+  --headings-font: "Cormorant SC", serif;
+  --font-option-1: "Lora", serif;
+  --font-option-2: "Source Code Pro", monospace;
+}
+
 body {
   background: var(--my-background-colour);
   margin: 0;
   padding: 0;
+}
+
+section.secondary-section {
+  background: var(--my-muted-colour);
 }
 
 footer,
@@ -65,6 +81,9 @@ a {
 }
 
 nav {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(3px);
+  border-radius: 12px;
   padding: 15px 0;
 }
 
@@ -146,13 +165,23 @@ footer .social-links a:hover {
   min-height: 100vh;
 }
 
+.hero-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
 .hero-content {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(3px);
+  border-radius: 12px;
   align-items: center;
   display: flex;
   flex: 1;
   flex-direction: column;
   justify-content: center;
-  padding: 40px 20px;
+  padding: 30px 54px;
   text-align: center;
 }
 
@@ -160,9 +189,18 @@ footer .social-links a:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("/images/background-code-three-code-only.jpg") center/cover
-    no-repeat;
-  opacity: 0.1;
+  background: url("/images/chardi-hero.png") center/cover no-repeat;
+  filter: brightness(1.1) contrast(1.2) saturate(1.2);
+  opacity: 0.6;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
   z-index: 0;
   pointer-events: none;
 }
@@ -170,6 +208,13 @@ footer .social-links a:hover {
 .hero > * {
   position: relative;
   z-index: 1;
+}
+
+.hero h1,
+h2,
+h3,
+nav,
+.primary-button {
 }
 
 .logo {
