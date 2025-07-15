@@ -210,25 +210,20 @@ footer .social-links a:hover {
   z-index: 1;
 }
 
-.hero i {
+.arrow-icon {
   background-color: var(--my-accent-colour);
   border-radius: 50%;
   color: var(--my-primary-colour);
   display: block;
-  font-size: 18px;
-  margin: 0 auto;
-  padding: 10px 14px;
-  transition: all 100ms ease-in-out;
-}
-
-.hero .arrow-icon {
   font-size: 24px;
+  margin: 0 auto;
   margin-top: 40px;
-  transition: transform 0.3s ease, color 0.3s ease;
+  padding: 10px 14px;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
   cursor: pointer;
 }
 
-.hero .arrow-icon:hover {
+.arrow-icon:hover {
   transform: translateY(8px);
   color: var(--my-accent-colour);
   background-color: var(--my-primary-colour);
@@ -333,15 +328,21 @@ footer .social-links a:hover {
 
 .content p {
   font-size: 14px;
+  line-height: 1.5;
 }
 
 .content {
   margin: 30px;
 }
 
-.html-text {
-  text-align: center;
-  color: var(--my-greyed-out-colour);
+.prog-lang {
+  color: var(--my-accent-colour);
+  font-weight: bold;
+}
+
+.other-skill {
+  color: var(--my-primary-colour);
+  font-weight: bold;
 }
 
 .project-title a {
@@ -493,10 +494,6 @@ footer .social-links a:hover {
   .skills div {
     max-width: 100%;
     height: auto;
-  }
-
-  .html-text {
-    font-size: 12px;
   }
 
   .card-img,
