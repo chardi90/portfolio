@@ -373,6 +373,7 @@ footer .social-links a:hover {
   bottom: 0;
   background: rgba(0, 0, 0, 0.6);
   color: white;
+  font-family: var(--font-option-2);
   font-size: 20px;
   font-weight: bold;
   display: flex;
@@ -538,5 +539,16 @@ footer .social-links a:hover {
   .contact-form {
     margin: 0 auto;
     padding: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .overlay-text {
+    opacity: 1 !important;
+    pointer-events: none;
+  }
+
+  .image-hover-wrapper:hover .overlay-text {
+    opacity: 1 !important;
   }
 }
