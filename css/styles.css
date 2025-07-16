@@ -378,7 +378,7 @@ footer .social-links a:hover {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.6);
-  color: white;
+  color: var(--my-background-colour);
   font-family: var(--font-option-2);
   font-size: 20px;
   font-weight: bold;
@@ -398,6 +398,7 @@ footer .social-links a:hover {
 }
 
 .overlay-text li {
+  color: var(--my-background-colour);
   list-style: none;
   padding-left: 0;
 }
@@ -418,17 +419,6 @@ footer .social-links a:hover {
   max-width: 900px;
   margin: auto;
   width: 90%;
-}
-
-@media (min-width: 768px) {
-  .feature-btn {
-    margin-top: 20px;
-    margin-left: 20px;
-  }
-
-  .feature-subheading {
-    margin: 0 20px;
-  }
 }
 
 @media (max-width: 900px) {
