@@ -63,6 +63,7 @@ p,
 ul {
   color: var(--my-dark-colour);
   font-family: var(--font-option-2);
+  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -327,7 +328,7 @@ footer .social-links a:hover {
 }
 
 .content p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -485,6 +486,11 @@ footer .social-links a:hover {
 
   footer {
     font-size: 12px;
+  }
+
+  .content p {
+    font-size: 14px;
+    line-height: 1.5;
   }
 
   .logo {
