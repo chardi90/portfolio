@@ -1,8 +1,8 @@
 :root {
-  --my-primary-colour: #6a189a;
-  --my-accent-colour: #ff6f00;
+  --my-primary-colour: #468189;
+  --my-accent-colour: #ac0000;
   --my-dark-colour: #333333;
-  --my-greyed-out-colour: #b6a99f;
+  --my-greyed-out-colour: #a9b1b3;
   --my-background-colour: #fdfdfd;
   --my-muted-colour: #f0f4f8;
   --headings-font: "Cormorant SC", serif;
@@ -77,7 +77,7 @@ header {
 }
 
 nav {
-  padding: 15px 0;
+  padding: 20px 20px;
 }
 
 nav ul {
@@ -245,8 +245,8 @@ footer .social-links a:hover {
 }
 
 .logo {
-  max-height: 50px;
-  padding-left: 40px;
+  max-height: 90px;
+  padding-left: 10px;
 }
 
 .primary-button {
@@ -433,6 +433,11 @@ footer .social-links a:hover {
   opacity: 1;
 }
 
+.about img {
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
 .accordion-header button {
   background-color: var(--my-background-colour);
   font-weight: bold;
@@ -451,6 +456,27 @@ footer .social-links a:hover {
   max-width: 900px;
   margin: auto;
   width: 90%;
+}
+
+@media (min-width: 992px) {
+  .content img {
+    max-width: 70%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .content h1 {
+    font-size: 3rem;
+  }
+
+  .content h3 {
+    font-size: 1.75rem;
+  }
+
+  .content p {
+    font-size: 1.125rem;
+    line-height: 1.7;
+  }
 }
 
 @media (max-width: 900px) {
@@ -477,7 +503,7 @@ footer .social-links a:hover {
   }
 
   nav {
-    padding: 0;
+    padding: 10px 0;
   }
 
   nav li {
@@ -501,9 +527,7 @@ footer .social-links a:hover {
 
   .logo {
     padding: 0;
-    position: relative;
-    top: 5px;
-    max-height: 30px;
+    max-height: 50px;
   }
 
   .hero {
