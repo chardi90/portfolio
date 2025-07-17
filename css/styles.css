@@ -613,9 +613,12 @@ footer .social-links a:hover {
   }
 
   .hero-content {
+    padding: 10px;
+  }
+
+  .hero-content .blur {
     background: none;
     backdrop-filter: none;
-    padding: 10px;
   }
 
   .hero nav {
