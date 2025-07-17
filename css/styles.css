@@ -627,6 +627,11 @@ footer .social-links a:hover {
     padding: 10px;
   }
 
+  .hero nav {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
   .hero-content-container {
     padding: 10px;
   }
