@@ -198,8 +198,14 @@ footer .social-links a:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("/images/chardi-hero.png") center/cover no-repeat;
+  background-image: url("/images/chardi-hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
   filter: brightness(1.1) contrast(1.2) saturate(1.2);
+  justify-content: center;
   opacity: 0.6;
   z-index: 0;
   pointer-events: none;
@@ -583,6 +589,25 @@ footer .social-links a:hover {
 }
 
 @media (max-width: 767px) {
+  .hero::before {
+    background-image: none; /* remove image */
+  }
+
+  .hero::after {
+    background: rgba(0, 0, 0, 0.2); /* soften overlay */
+  }
+
+  .hero-content {
+    background: none;
+    backdrop-filter: none;
+    padding: 10px;
+  }
+
+  .hero {
+    margin: 0 -12px;
+    padding: 0;
+  }
+
   .overlay-text {
     opacity: 1 !important;
     pointer-events: none;
