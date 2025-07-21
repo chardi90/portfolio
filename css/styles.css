@@ -1,6 +1,6 @@
 :root {
   --my-primary-colour: #468189;
-  --my-accent-colour: #ac0000;
+  --my-accent-colour: #8a0000;
   --my-dark-colour: #333333;
   --my-greyed-out-colour: #a9b1b3;
   --my-background-colour: #fdfdfd;
@@ -37,7 +37,7 @@ h1 {
 h2 {
   color: var(--my-accent-colour);
   font-family: var(--headings-font);
-  font-size: 60px;
+  font-size: 66px;
   font-weight: 600;
   line-height: 1;
 }
@@ -232,11 +232,11 @@ footer .social-links a:hover {
 .arrow-icon {
   background-color: var(--my-accent-colour);
   border-radius: 50%;
-  color: var(--my-primary-colour);
+  color: #fff;
   display: block;
   font-size: 24px;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 25px;
   padding: 10px 14px;
   transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
   cursor: pointer;
@@ -325,7 +325,7 @@ footer .social-links a:hover {
 }
 
 .content-container {
-  padding: 50px 20px;
+  padding: 50px 20px 25px;
 }
 
 .content h1 {
@@ -477,7 +477,7 @@ footer .social-links a:hover {
   }
 
   h2 {
-    font-size: 32px;
+    font-size: 36px;
   }
 
   h3 {
@@ -564,7 +564,7 @@ footer .social-links a:hover {
   }
 
   .accordion-item p {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .content {
