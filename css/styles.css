@@ -197,23 +197,21 @@ footer .social-links a:hover {
 }
 
 .hero-content .blur {
-  background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(3px);
   border-radius: 4px;
-  padding: 5px 5px;
 }
 
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("/images/chardi-hero.png");
+  background-image: url("/images/chardi-hero-reduced.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  filter: brightness(1.1) contrast(1.2) saturate(1.2);
+  filter: brightness(0.7) contrast(1.1) saturate(1.1);
   justify-content: center;
   opacity: 0.6;
   z-index: 0;
@@ -224,7 +222,7 @@ footer .social-links a:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
   z-index: 0;
   pointer-events: none;
 }
@@ -237,7 +235,7 @@ footer .social-links a:hover {
 .arrow-icon {
   background-color: var(--my-accent-colour);
   border-radius: 50%;
-  color: #fff;
+  color: var(--my-background-colour);
   display: block;
   font-size: 24px;
   margin: 0 auto;
@@ -334,7 +332,11 @@ footer .social-links a:hover {
 }
 
 .content h1 {
-  font-size: 46px;
+  color: var(--my-accent-colour);
+  font-family: var(--headings-font);
+  font-size: 66px;
+  font-weight: 600;
+  line-height: 1;
 }
 
 .content h3 {
