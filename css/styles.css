@@ -465,6 +465,12 @@ footer .social-links a:hover {
   margin: 0 auto;
 }
 
+.accordion-body a {
+  color: var(--my-accent-colour);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 .contact-form {
   border-radius: 12px;
   background: var(--my-muted-colour);
