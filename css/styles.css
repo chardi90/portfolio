@@ -444,6 +444,11 @@ footer .social-links a:hover {
   opacity: 1;
 }
 
+.image-hover-wrapper,
+.overlay-text {
+  box-sizing: border-box;
+}
+
 .about img {
   border: 1px solid #ccc;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -470,7 +475,7 @@ footer .social-links a:hover {
 }
 
 @media (min-width: 992px) {
-  .content img {
+  .image-hover-wrapper {
     max-width: 70%;
     margin: 0 auto;
     display: block;
