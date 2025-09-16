@@ -39,7 +39,11 @@ const About: React.FC = () => {
       content: (
         <>
           As part of the leadership team at{" "}
-          <a href="#" target="_blank" rel="noreferrer">
+          <a
+            href="https://pagodaprojects.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
             Pagoda Projects Ltd
           </a>{" "}
           for over 5 years, I have experience in{" "}
@@ -115,7 +119,7 @@ const About: React.FC = () => {
               <div className="content">
                 <img
                   src="/images/clare-recent-photo.png"
-                  alt="Photo of Clare"
+                  alt="Clare - Chardi"
                   className="img-fluid rounded shadow"
                 />
               </div>
@@ -201,27 +205,7 @@ const About: React.FC = () => {
       <div className="divider"></div>
 
       <section className="primary-section contact" id="contact">
-        <div className="container">
-          <h2 className="text-center m-5">CONTACT ME</h2>
-          <div
-            className="contact-box d-flex justify-content-between"
-            id="about-contact"
-          >
-            <div className="enquiry">
-              <h4>Work Inquiries</h4>
-              <p>Interested in working together?</p>
-            </div>
-            <div>
-              <a
-                href="/contact"
-                title="Contact Me"
-                className="btn primary-button shadow"
-              >
-                Let's Collaborate!
-              </a>
-            </div>
-          </div>
-        </div>
+        <ContactSection />
       </section>
 
       <Footer />

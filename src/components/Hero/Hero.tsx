@@ -18,19 +18,19 @@ const Hero: React.FC = () => {
                 <a href="/" title="Homepage">
                   Home
                 </a>
-                <span className="slashes">//</span>
+                <span className="slashes">{"//"}</span>
               </li>
               <li>
                 <a href="/about" title="About">
                   About
                 </a>
-                <span className="slashes">//</span>
+                <span className="slashes">{"//"}</span>
               </li>
               <li>
                 <a href="/work" title="Work">
                   Work
                 </a>
-                <span className="slashes">//</span>
+                <span className="slashes">{"//"}</span>
               </li>
               <li>
                 <a href="/contact" title="Contact">

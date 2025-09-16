@@ -34,7 +34,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage }) => {
                   {item.label}
                 </NavLink>
                 {index < navItems.length - 1 && (
-                  <span className="slashes">//</span>
+                  <span className="slashes">{"//"}</span>
                 )}
               </li>
             ))}
