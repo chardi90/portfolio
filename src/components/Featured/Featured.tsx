@@ -46,7 +46,7 @@ const FeaturedSection: React.FC = () => {
       description:
         "All about croissants. A webapp layout design for a bakery or cafe website. Built with HTML and Typescript, made responsive with Bootstrap and CSS.",
       image: "/images/croissant-square.png",
-      alt: "Croissant Bakery Design",
+      alt: "Croissant Bakery",
       projectUrl: "https://le-croissant.netlify.app/",
       technologies: [
         { name: "Bootstrap", highlight: 2 },
@@ -61,7 +61,7 @@ const FeaturedSection: React.FC = () => {
     },
     {
       id: 3,
-      title: "Parkrun Challenge Tracker",
+      title: "Parkrun Challenge",
       description:
         "A webapp with a map and a list of parkruns in Greater Manchester where runners can track their progress as they complete each run on the challenge.",
       image: "/images/parkrun-square.png",
