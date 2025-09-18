@@ -118,7 +118,7 @@ const About: React.FC = () => {
             <div className="col-lg-6">
               <div className="content">
                 <img
-                  src="/images/clare-recent-photo.png"
+                  src="/images/clare-recent-photo.jpg"
                   alt="Clare - Chardi"
                   className="img-fluid rounded shadow"
                 />
