@@ -7,7 +7,7 @@ const About: React.FC = () => {
   const experienceData = [
     {
       id: "flush-collapseOne",
-      title: "Careers Associate & WebApp Developer @ Freelance",
+      title: "Careers Associate & Developer @ Freelance",
       period: "2025 - present",
       content: (
         <>
@@ -185,7 +185,7 @@ const About: React.FC = () => {
             </div>
             <div className="d-flex justify-content-center my-4">
               <a
-                href="/pdf/CV.pdf"
+                href="/pdf/chardi-cv.pdf"
                 target="_blank"
                 title="CV"
                 className="btn outline-button shadow"

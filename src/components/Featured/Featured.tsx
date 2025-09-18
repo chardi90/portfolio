@@ -85,7 +85,7 @@ const FeaturedSection: React.FC = () => {
 
     const interval = setInterval(() => {
       setCurrentProject((prev) => (prev + 1) % projects.length);
-    }, 5000);
+    }, 6000);
 
     return () => clearInterval(interval);
   }, [isAutoPlaying, projects.length]);
@@ -127,7 +127,116 @@ const FeaturedSection: React.FC = () => {
               </div>
 
               {/* Mobile image */}
-              <div className="order-1 order-md-0 text-center my-3 d-block d-md-none">
+              {/* Mobile Carousel Navigation - Above Image */}
+              <div className="order-1 d-block d-md-none">
+                <div
+                  className="carousel-navigation-mobile mb-3 d-flex justify-content-center align-items-center"
+                  style={{
+                    position: "relative",
+                    gap: "40px",
+                    zIndex: "10",
+                    width: "100%",
+                  }}
+                >
+                  <button
+                    onClick={goToPrevious}
+                    className="carousel-btn me-3"
+                    aria-label="Previous project"
+                    style={{
+                      background: "var(--my-primary-colour)",
+                      color: "var(--my-background-colour)",
+                      border: "none",
+                      borderRadius: "50%",
+                      width: "40px",
+                      height: "40px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      fontSize: "18px",
+                      transition: "all 200ms ease-in-out",
+                      cursor: "pointer",
+                      flexShrink: "0",
+                    }}
+                    onMouseOver={(e) => {
+                      e.currentTarget.style.background =
+                        "var(--my-accent-colour)";
+                    }}
+                    onMouseOut={(e) => {
+                      e.currentTarget.style.background =
+                        "var(--my-primary-colour)";
+                    }}
+                  >
+                    ‹
+                  </button>
+
+                  <div
+                    className="carousel-indicators d-flex mx-3"
+                    style={{
+                      gap: "8px",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    {projects.map((_, index) => (
+                      <button
+                        key={index}
+                        onClick={() => goToProject(index)}
+                        className="indicator-dot"
+                        aria-label={`Go to project ${index + 1}`}
+                        style={{
+                          width: "12px",
+                          height: "12px",
+                          borderRadius: "50%",
+                          border: "none",
+                          background:
+                            index === currentProject
+                              ? "var(--my-accent-colour)"
+                              : "var(--my-greyed-out-colour)",
+                          cursor: "pointer",
+                          transition: "all 200ms ease-in-out",
+                          padding: "0",
+                          margin: "0",
+                          flexShrink: "0",
+                        }}
+                      />
+                    ))}
+                  </div>
+
+                  <button
+                    onClick={goToNext}
+                    className="carousel-btn ms-3"
+                    aria-label="Next project"
+                    style={{
+                      background: "var(--my-primary-colour)",
+                      color: "var(--my-background-colour)",
+                      border: "none",
+                      borderRadius: "50%",
+                      width: "40px",
+                      height: "40px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      fontSize: "18px",
+                      transition: "all 200ms ease-in-out",
+                      cursor: "pointer",
+                      flexShrink: "0",
+                    }}
+                    onMouseOver={(e) => {
+                      e.currentTarget.style.background =
+                        "var(--my-accent-colour)";
+                    }}
+                    onMouseOut={(e) => {
+                      e.currentTarget.style.background =
+                        "var(--my-primary-colour)";
+                    }}
+                  >
+                    ›
+                  </button>
+                </div>
+              </div>
+
+              {/* Mobile Image - Below Navigation */}
+              <div className="order-2 order-md-0 text-center my-3 d-block d-md-none">
                 <div className="image-hover-wrapper">
                   <a
                     href={currentProjectData.projectUrl}
@@ -154,7 +263,7 @@ const FeaturedSection: React.FC = () => {
                 </div>
               </div>
 
-              <div className="order-2">
+              <div className="order-3">
                 <h3
                   className="text-center text-md-start mb-3"
                   style={{ color: "var(--my-accent-colour)", fontSize: "28px" }}
@@ -176,11 +285,19 @@ const FeaturedSection: React.FC = () => {
                   ))}
                 </ul>
 
-                {/* Carousel Navigation */}
-                <div className="carousel-navigation mt-4 d-flex justify-content-center justify-content-md-start align-items-center">
+                {/* Desktop Carousel Navigation */}
+                <div
+                  className="carousel-navigation mt-4 d-none d-md-flex justify-content-start align-items-center"
+                  style={{
+                    position: "relative",
+                    gap: "40px",
+                    zIndex: "10",
+                    width: "fit-content",
+                  }}
+                >
                   <button
                     onClick={goToPrevious}
-                    className="btn carousel-btn me-3"
+                    className="carousel-btn me-3"
                     aria-label="Previous project"
                     style={{
                       background: "var(--my-primary-colour)",
@@ -194,6 +311,8 @@ const FeaturedSection: React.FC = () => {
                       justifyContent: "center",
                       fontSize: "18px",
                       transition: "all 200ms ease-in-out",
+                      cursor: "pointer",
+                      flexShrink: "0",
                     }}
                     onMouseOver={(e) => {
                       e.currentTarget.style.background =
@@ -207,12 +326,19 @@ const FeaturedSection: React.FC = () => {
                     ‹
                   </button>
 
-                  <div className="carousel-indicators d-flex mx-3">
+                  <div
+                    className="carousel-indicators d-flex mx-3"
+                    style={{
+                      gap: "8px",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
                     {projects.map((_, index) => (
                       <button
                         key={index}
                         onClick={() => goToProject(index)}
-                        className="indicator-dot me-2"
+                        className="indicator-dot"
                         aria-label={`Go to project ${index + 1}`}
                         style={{
                           width: "12px",
@@ -225,6 +351,9 @@ const FeaturedSection: React.FC = () => {
                               : "var(--my-greyed-out-colour)",
                           cursor: "pointer",
                           transition: "all 200ms ease-in-out",
+                          padding: "0",
+                          margin: "0",
+                          flexShrink: "0",
                         }}
                       />
                     ))}
@@ -232,7 +361,7 @@ const FeaturedSection: React.FC = () => {
 
                   <button
                     onClick={goToNext}
-                    className="btn carousel-btn ms-3"
+                    className="carousel-btn ms-3"
                     aria-label="Next project"
                     style={{
                       background: "var(--my-primary-colour)",
@@ -246,6 +375,8 @@ const FeaturedSection: React.FC = () => {
                       justifyContent: "center",
                       fontSize: "18px",
                       transition: "all 200ms ease-in-out",
+                      cursor: "pointer",
+                      flexShrink: "0",
                     }}
                     onMouseOver={(e) => {
                       e.currentTarget.style.background =
